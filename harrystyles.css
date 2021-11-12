@@ -1,3 +1,62 @@
+@font-face {
+    font-family: txt;
+    src: url(HelveticaNeue-Regular.ttf);
+}
+:root{
+    --navcolor:#1F9C6A;
+    --txtboxbackcolor:#473434; 
+    --hovercolor
+    --clickcolor
+    --txtfont: txt;
+}
+
 body{
-    margin: 0;
+    margin: 0px;
+}
+
+h1{
+    font-family: source-serif-4, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 49pt;
+}
+
+h2{
+    font-family: source-serif-4, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30pt;
+}
+
+h3{
+    font-family: source-serif-4, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+.blank-box,
+.parallax-box{
+    width: 100%;
+    background-color: var(--navcolor)
+}
+.content-box{
+    margin: auto;
+    max-width: 354px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.txt-box{
+    flex-direction: column;
+}
+
+p{
+    font-family: txt;
+    font-size: 15pt;
+}
+
+@media screen and (min-width:720px){
+
 }
