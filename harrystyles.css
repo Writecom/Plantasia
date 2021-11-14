@@ -57,6 +57,182 @@ p{
     font-size: 15pt;
 }
 
+/* Til Købs siden */
+.nav-buy{
+    display: flex;
+    background-color: var(--navcolor);
+    height: 65px;
+}
+.nav-buy ul{
+    list-style: none;
+}
+.nav-buy a{
+    padding: 0.6em;
+    text-decoration: none;
+    color: black;
+}
+/* Placerholder Hover */
+.nav-buy a:hover{
+    color: white;
+}
+.nav-buy img{
+    width: 55px;
+    height: 55px;
+    margin-left: 47px;
+    margin-top: 5px;
+}
+.banner{
+    position: relative;
+}
+.banner h1{
+    position: absolute;
+    color: white;
+    font-size: 49pt;
+    margin-top: 92px;
+    margin-left: 37px;
+    /* indsæt displayfonten  
+    font-family: ;
+    */
+}
+.banner img{
+    object-fit: cover;
+    width: 100%;
+    height: 170px;
+}
+.buy{
+    background-image: url(imgs/bgHome.jpg);
+    background-position: center;
+    margin: 0;
+}
+
+h1{
+    font-family: source-serif-4, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 49pt;
+}
+
+h2{
+    font-family: source-serif-4, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 30pt;
+}
+
+h3{
+    font-family: source-serif-4, serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18pt;
+}
+
+.blank-box,
+.parallax-box{
+    width: 100%;
+    background-color: var(--navcolor)
+}
+.content-box{
+    margin: auto;
+    max-width: 354px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    display: flex;
+}
+
+.txt-box{
+    flex-direction: column;
+}
+
+p{
+    font-family: txt;
+    font-size: 15pt;
+}
+
 @media screen and (min-width:720px){
 
+}
+.buy h2{
+    font-size: 49pt;
+    font-family: txt;
+    margin-bottom: 0;
+}
+
+.handlere {
+    display: flex;
+    background-color: white;
+    padding: 9px;
+    height: 56px;
+    /* background-color: white; */
+    border: 1px solid black;
+}
+.handlere input{
+    width: 100%;
+    height: 39px;
+    margin: 8px;
+}
+.frame{
+    border-radius: 6px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+.frame a{
+    text-decoration: none;
+    color: black;
+    background: #D99559;
+    border: 1px solid gray;
+    border-radius: 6px;
+    /* why it no work?! vvv width og height*/
+    width: 354px;
+    height: 67px;
+    font-family: txt;
+    font-size: 24pt;
+    padding-left: 104.14px;
+    padding-right: 104.14px;
+    border: 2px solid gray;
+}
+.frame img{
+    width: 354px;
+    border: solid gray 1px;
+}
+.product{
+    object-fit: cover;
+    width: 354px;
+    height: 215px;
+}
+/* Til Købs siden slut */
+
+
+@media screen and (min-width:720px){
+
+
+
+    /* Købs Siden */
+    .container{
+        background: white;
+        border: solid gray 2px;
+        position: relative;
+        padding-bottom: 138px;
+    }
+    .frame{
+        max-width: 1640px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .frame a{
+        position: absolute;
+        right: 140px;
+        bottom: 43px;
+        text-align: center;
+        padding-top: 10px;
+        height: 54px;
+    }
+    .frame img{
+        width: 1640px;
+    }
+    #product{
+        width: 1364px;
+        height: 570px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

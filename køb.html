@@ -1,43 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plantasia Køb</title>
     <link rel="stylesheet" href="harrystyles.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/logofullp.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
+    <!-- Nav bar med Header til logo -->
+    <nav class="nav-buy">
+        <img src="imgs/logofullp.png" alt="logo">
         <ul>
             <li>
-                <a href="">Link</a>
-                <a href="">Link</a>
-                <a href="">Link</a>
-                <a href="">Link</a>
-                <a href="">Link</a>
+                <a href="index.html">Forside</a>
+                <a href="">Køb</a>
+                <a href="tutorial.html">Prøv Selv</a>
+                <a href="">Blog</a>
+                <a href="FAQ.html">FAQ</a>
             </li>
         </ul>
     </nav>
+<!-- Top Banner på siden -->
+    <header class="banner parallax-effect">
+        <h1>Plantasia</h1>
+        <img src="imgs/pcBanner.jpg" alt="Logo">
+    </header>
 
-    <section class="parallax-box">
-        <h2>Køb</h2>
-        <div class="container">
-            <img src="" alt="Produkt">
-        </div>
-        
-        <h2>Levandører</h2>
-        <div class="container">
-            <div>
-                <input type="text" placeholder="By">
-                <input type="text" placeholder="Søg">
+    <main class="buy">
+        <section class="frame">
+            <h2>Køb</h2> 
+            <div class="container">
+                <img id="product" src="imgs/Termometer.jpg" alt="produkt">
+                <a href="#">Tilføj til Kurv</a>
             </div>
-        </div>
-    </section>
+            
+        </section>
 
-    <footer>
-        <p></p>
-    </footer>
+        <section class="frame">
+            <h2>Levandører</h2>
+            <div class="handlere">
+                <input type="text" name="" placeholder="Postnr" id="">
+
+                <input type="text" name="" placeholder="By" id="">
+                <input type="search" name="" placeholder="Søg" id="">
+                
+            </div>
+            <img src="imgs/kort@2x.jpg" alt="kort">
+        </section>
+    </main>
+<footer>
+    <img src="" alt="firmalogo">
+</footer> 
+
 </body>
+
 </html>
