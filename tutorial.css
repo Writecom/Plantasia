@@ -1,0 +1,22 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tryprototype {
+    font-weight: bold;
+    border: brown;
+    color: rgb(0, 0, 0);
+    background-color: #D99559;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: thin;
+    border-color: #000000;
+    max-height: fit-content;
+    cursor: pointer;
+}
