@@ -65,15 +65,16 @@ p{
 }
 .nav-buy ul{
     list-style: none;
+    margin-left: auto;
+    margin-right: 10%;
 }
 .nav-buy a{
     padding: 0.6em;
     text-decoration: none;
-    color: black;
-}
-/* Placerholder Hover */
-.nav-buy a:hover{
     color: white;
+}
+.nav-buy a:hover{
+    color: black;
 }
 .nav-buy img{
     width: 55px;
@@ -83,6 +84,7 @@ p{
 }
 .banner{
     position: relative;
+
 }
 .banner h1{
     position: absolute;
@@ -90,6 +92,9 @@ p{
     font-size: 49pt;
     margin-top: 92px;
     margin-left: 37px;
+
+    font-size: min(34pt);
+    font-size: auto;
     /* indsæt displayfonten  
     font-family: ;
     */
@@ -100,60 +105,18 @@ p{
     height: 170px;
 }
 .buy{
-    background-image: url(imgs/bgHome.jpg);
-    background-position: center;
+    background-image: url(imgs/bgHomePc.jpg);
+    background-size: cover;
+    background-position-x: -100px;
+    background-position-y: -20px;
     margin: 0;
+    margin-top:-2em;
 }
-
-h1{
-    font-family: source-serif-4, serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 49pt;
-}
-
-h2{
-    font-family: source-serif-4, serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 30pt;
-}
-
-h3{
-    font-family: source-serif-4, serif;
-    font-weight: 200;
-    font-style: normal;
-    font-size: 18pt;
-}
-
-.blank-box,
-.parallax-box{
-    width: 100%;
-    background-color: var(--navcolor)
-}
-.content-box{
-    margin: auto;
-    max-width: 354px;
-    padding-top: 24px;
-    padding-bottom: 40px;
-    display: flex;
-}
-
-.txt-box{
-    flex-direction: column;
-}
-
-p{
-    font-family: txt;
-    font-size: 15pt;
-}
-
 .buy h2{
-    font-size: 49pt;
+    font-size: 34pt;
     font-family: txt;
     margin-bottom: 0;
 }
-
 .handlere {
     display: flex;
     background-color: white;
@@ -161,6 +124,7 @@ p{
     height: 56px;
     /* background-color: white; */
     border: 1px solid black;
+    border-radius: 11px 11px 0 0;
 }
 .handlere input{
     width: 100%;
@@ -168,33 +132,58 @@ p{
     margin: 8px;
 }
 .frame{
-    border-radius: 6px;
-    margin-left: 37px;
-    margin-right: 37px;
+    display: block;
+    border-radius: 11px;
+    margin-left: min(37px,5%);
+    margin-left: max(auto);
+    margin-right: min(37px,5%);
+    margin-right: max(auto);
+}
+.container{
+    border-radius: 11px;
 }
 .btn{
     text-decoration: none;
     color: black;
+    width: 100%;
     background: #D99559;
     border: 1px solid gray;
     border-radius: 6px;
-    /* why it no work?! vvv width og height*/
-    width: 354px;
-    height: 67px;
     font-family: txt;
     font-size: 24pt;
-    padding-left: 104.14px;
-    padding-right: 104.14px;
-    border: 2px solid gray;
+    text-align: center;
 }
+.btn-køb{
+    width: 100%;
+    padding-left: 28%;
+    padding-right: 28%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .frame img{
-    width: 354px;
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
     border: solid gray 1px;
+    border-radius: 0 0 20px 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .product{
+    display: block;
     object-fit: cover;
     width: 354px;
     height: 215px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.kfooter{
+    background-color: var(--navcolor);
+}
+.kfooter img{
+    width: 55px;
+    height: 55px;
 }
 /* Til Købs siden slut */
 
@@ -202,10 +191,14 @@ p{
 @media screen and (min-width:720px){
 
 
-
     /* Købs Siden */
+    .buy{
+        background-position-x: -600px;
+        background-position-y: -15px;
+        height: 255vh;
+    }
     .banner h1{
-        margin-left: 30%;
+        margin-left: 15%;
         font-size: 70pt;
         position: absolute;
         bottom: -0.5em;
@@ -217,25 +210,38 @@ p{
         padding-bottom: 138px;
     }
     .frame{
-        max-width: 1640px;
+        width: 90vw;
         margin-left: auto;
         margin-right: auto;
     }
-    .btn{
+
+    .btn-position{
         position: absolute;
-        right: 140px;
+        left: 62%;
+        top: 90%;
+        transform: translate(-50%,-50%);
         bottom: 43px;
         text-align: center;
+    }
+    .btn-køb{
+        width: 30%;
         padding-top: 10px;
         height: 54px;
+        padding-left: 3%;
+        padding-right: 3%;
     }
     .frame img{
-        width: 1640px;
+        width: 100%;
     }
     #product{
-        width: 70%;
+        width: 60%;
         height: 570px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 4%;
+        border-radius: 0;
+    }
+    .kfooter{
+        margin-top: 4em;
     }
 }
