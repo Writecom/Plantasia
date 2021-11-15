@@ -148,9 +148,6 @@ p{
     font-size: 15pt;
 }
 
-@media screen and (min-width:720px){
-
-}
 .buy h2{
     font-size: 49pt;
     font-family: txt;
@@ -175,7 +172,7 @@ p{
     margin-left: 37px;
     margin-right: 37px;
 }
-.frame a{
+.btn{
     text-decoration: none;
     color: black;
     background: #D99559;
@@ -207,6 +204,12 @@ p{
 
 
     /* Købs Siden */
+    .banner h1{
+        margin-left: 30%;
+        font-size: 70pt;
+        position: absolute;
+        bottom: -0.5em;
+    }
     .container{
         background: white;
         border: solid gray 2px;
@@ -218,7 +221,7 @@ p{
         margin-left: auto;
         margin-right: auto;
     }
-    .frame a{
+    .btn{
         position: absolute;
         right: 140px;
         bottom: 43px;
@@ -230,7 +233,7 @@ p{
         width: 1640px;
     }
     #product{
-        width: 1364px;
+        width: 70%;
         height: 570px;
         margin-left: auto;
         margin-right: auto;
