@@ -6,7 +6,7 @@ display: flex;
     align-items: center;
 
 }
-@media screen and (min-width: 500px) {
+@media only screen and (min-width: 400px) {
     .flex-container {
         flex-direction: row;
         display: flex;
@@ -44,4 +44,31 @@ display: flex;
 }
 .flex-container .previewvid {
     margin-right: 10%;
+}
+.flex-container video {
+    width: 100%;
+}
+@media only screen and (min-width: 300px)   {
+    .flex-container video {
+        width: 300px;
+    }
+    .button-try-preview {
+        width: 300px;
+    }
+}
+.vid-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.vid-list li {
+    display: inline;
+ 
+ 
+}
+.vid-list iframe {
+    border-color: #473434;
 }
