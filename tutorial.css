@@ -1,5 +1,13 @@
-.flex-container {
+h1 {
+    font-size: 19pt;
+    color: var();
+}
+body {
+    background-image: url('/imgs/bgHomePC.jpg');
+    /* background-repeat: no-repeat; */
+  }
 
+.flex-container {
 display: flex;
     /* float: left; */
     flex-direction: column;
