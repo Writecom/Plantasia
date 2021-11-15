@@ -36,9 +36,9 @@ h3{
 }
 
 .blank-box,
-.parallax-box{
+.parallax-box,
+.parallax-box2{
     width: 100%;
-    background-color: var(--navcolor)
 }
 .content-box{
     margin: auto;
@@ -46,9 +46,20 @@ h3{
     padding-top: 24px;
     padding-bottom: 40px;
     display: flex;
+    flex-direction: column;
+}
+.content-box2{
+    margin: auto;
+    max-width: 354px;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
-.txt-box{
+.txt-box,
+.parallax-box2{
+    display: flex;
     flex-direction: column;
 }
 
@@ -198,6 +209,49 @@ p{
 }
 /* Til Købs siden slut */
 
+
+.banner1,
+.parallax-box,
+.parallax-box2,
+.banner1{
+    background-attachment: fixed;
+    background-size: 100%;
+
+}
+
+.banner1{
+    background-image: url(./billeder-til-site/index/Bannerbillede-reverse.jpg);
+    color: white;
+    height: 170px;
+    padding-bottom: 20px;
+
+}
+
+.banner1 h1{
+    max-width: 354px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 103px;
+    padding-bottom: 20px;
+}
+
+.inner-content-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.parallax-box{
+    background-image: url(./billeder-til-site/index/plantevejledningsbillede2.jpg);
+}
+
+.parallax-box2{
+    background-image: url(./billeder-til-site/index/planteleksikonbillede.jpg);
+}
+
+.examples-box{
+    display: flex;
+    flex-direction: row;
+}
 
 @media screen and (min-width:720px){
 
