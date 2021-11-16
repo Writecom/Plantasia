@@ -318,7 +318,43 @@ p{
 }
 /* Til Købs siden slut */
 
-
+/* Blogs siden start */
+#blogMain{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-right: 0;
+    margin-left: 0;
+}
+article{
+    height: 400px;
+    border: 1px solid gray;
+    flex: 25%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+.blogs{
+    text-decoration: none;
+}
+.blogs:hover{
+    color: white;
+    background-color: var(--navcolor);
+}
+.blogs:hover img{
+    filter: brightness(0) invert(1)
+}
+#search input{
+    margin-right: auto;
+    width: 40%;
+    padding-top: 10px;
+    height: 30px;
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+/* Blogs siden slut */
 
 
 @media screen and (min-width:720px){
@@ -409,4 +445,42 @@ p{
         flex-direction: row;
         justify-content: space-evenly;
     }
+    /* Blogs siden start */
+    #blogMain{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 20px;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+    article{
+        height: 100%;
+        border: 1px solid gray;
+        flex: 25%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 0;
+    }
+    .blogs{
+        text-decoration: none;
+    }
+    .blogs:hover{
+        color: white;
+        background-color: var(--navcolor);
+    }
+    .blogs:hover img{
+        filter: brightness(0) invert(1)
+    }
+    #search input{
+        margin-left: 10%;
+        margin-right: auto;
+        width: 30%;
+        padding-top: 10px;
+        height: 54px;
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    /* Blogs siden slut */
 }
