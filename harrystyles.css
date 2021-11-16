@@ -190,6 +190,27 @@ footer p{
     display: flex;
     flex-direction: column;
 }
+
+
+/* Til Købs siden */
+.nav-buy{
+    display: flex;
+    background-color: var(--navcolor);
+    height: 65px;
+}
+.nav-buy ul{
+    list-style: none;
+    margin-left: auto;
+    margin-right: 10%;
+}
+.nav-buy a{
+    padding: 0.6em;
+    text-decoration: none;
+    color: white;
+}
+.nav-buy a:hover{
+    color: black;
+}
 .nav-buy img{
     width: 55px;
     height: 55px;
@@ -443,6 +464,23 @@ article{
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    .parallax-box h2,
+    .parallax-box h3,
+    .parallax-box2 h2,
+    .parallax-box2 h3{
+        max-width: 400px;
+    }
+    .parallax-box p,
+    .parallax-box2 p{
+        max-width: 260px;
+    }
+
+    .parallax-box2{
+        justify-content: space-evenly;
+    }
+
+
     /* Blogs siden start */
     #blogMain{
         display: grid;
