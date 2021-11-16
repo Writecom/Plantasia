@@ -1,6 +1,13 @@
 h1 {
     font-size: 19pt;
-    color: var();
+    /* color: var(); */
+}
+h2{
+    color: black;
+    font-family: source-serif-4, serif;
+    /* font-weight: 100; */
+    font-style: thin;
+    font-size: 23pt;
 }
 body {
     background-image: url('/imgs/bgHomePC.jpg');
@@ -64,6 +71,9 @@ display: flex;
         margin-right: 10%;
     }
 }
+
+
+
 .vid-list ul {
     list-style-type: none;
     padding: 0;
@@ -74,9 +84,19 @@ display: flex;
 }
 .vid-list li {
     display: inline;
- 
+
  
 }
 .vid-list iframe {
     border-color: #473434;
+}
+
+.video-sections-bg {
+    margin-top: 20px;
+    background: linear-gradient(12deg, rgba(93,218,160,1) 0%, rgba(31,156,106,1) 100%);
+}
+.vid-list h2 {
+    padding: 7px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
