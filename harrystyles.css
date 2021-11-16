@@ -33,7 +33,7 @@ h3{
     font-size: 18pt;
 }
 
-footer{
+ footer{
     width: 100%;
     background-color: var(--navcolor);
     display: flex;
@@ -41,10 +41,39 @@ footer{
     padding-top: 10px;
     padding-bottom: 10px;
 }
+footer p{
+    font-size: 10pt;
+    color: rgb(226, 226, 226);
+    text-align: center;
+}
 
-footer img{
-    width: 100px;
-    height: 100px;
+/* Footer fra Swing Project modificeret */
+.footer-main{
+    clear: both;
+    background-color: var(--navcolor);
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;   
+}
+.footer-main article{
+    border: none;
+    height: 100%;
+}
+.footer h3, p{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: block;
+    color: #61ebb4;
+    font-size: 12pt;
+}
+.footer{
+    text-align: center;
+    padding: 10px;
+}
+.footer-main img{
+    margin-left: 2%;
+    width: 55px;
+    height: 55px;
 }
 
 /*INDEX*/
@@ -309,13 +338,6 @@ p{
     margin-right: auto;
     margin-left: auto;
 }
-.kfooter{
-    background-color: var(--navcolor);
-}
-.kfooter img{
-    width: 55px;
-    height: 55px;
-}
 /* Til Købs siden slut */
 
 /* Blogs siden start */
@@ -356,7 +378,6 @@ article{
 }
 /* Blogs siden slut */
 
-
 @media screen and (min-width:720px){
 
 
@@ -364,7 +385,7 @@ article{
     .buy{
         background-position-x: -600px;
         background-position-y: -15px;
-        height: 255vh;
+        /* height: 255vh; */
     }
     .banner h1{
         margin-left: 15%;
@@ -409,9 +430,6 @@ article{
         margin-right: auto;
         margin-top: 4%;
         border-radius: 0;
-    }
-    .kfooter{
-        margin-top: 4em;
     }
 
     /*INDEX*/
