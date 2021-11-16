@@ -8,19 +8,31 @@
     <link rel="stylesheet" href="harrystyles.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://use.typekit.net/gtm3mrd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="navbar">
-        <a href=""> <img src="" alt="Plantasia ikon"> </a>
-        <a href="index.html">Forside</a>
-        <a href="">Køb</a>
-        <a href="">Prøv selv</a>
-        <a href="">Blog</a>
-        <a href="">FAQ</a>
+    <header>
+        <!-- denne burgermenu nav bar er lavet ved hjælp af kode fra https://www.w3schools.com/howto/howto_js_mobile_navbar.aspi -->
+        <nav class="topnav nav-buy">
+            <img src="imgs/logofullp.png" alt="logo">
+            
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a href="index.html">Forside</a>
+                <a href="forhandler.html">Forhandler</a>
+                <a href="køb.html">Køb</a>
+                <a href="kontaktos.html">Kontakt os</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i><script src="script.js"></script>
+            </a>
+        </nav>
+        <div class="banner parallax-effect">
+            <h1>FAQ</h1>
+        <img src="imgs/pcBanner.jpg" alt="Logo">
+        </div>
     </header>
-    <section class="banner">
-        <h1> Plantasia</h1>
-    </section>
     <section class="faq">
         <h2>
             Kan jeg betale med mobilpay?
@@ -57,10 +69,10 @@
         <h2>
             Fik du ikke svar på dit spørgsmål?
         </h2>
-        <button>
+        <button class="btn">
             Ja
         </button>
-        <button>
+        <button class="btn">
             Nej
         </button>
         <p>

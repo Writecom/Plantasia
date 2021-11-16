@@ -163,7 +163,7 @@ footer img{
 }
 
 /* Til Købs siden */
-.nav-buy{
+/* .nav-buy{
     display: flex;
     background-color: var(--navcolor);
     height: 65px;
@@ -180,7 +180,7 @@ footer img{
 }
 .nav-buy a:hover{
     color: black;
-}
+} */
 .nav-buy img{
     width: 55px;
     height: 55px;
@@ -483,4 +483,57 @@ article{
         margin-bottom: 10px;
     }
     /* Blogs siden slut */
+}
+.topnav {
+    overflow: hidden;
+    background-image: url(images/logobanner.png);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 40px;
+    display: block;
+    text-align: right;
+    
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+ 
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    
+    color: white;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    
+    color: white;
+    font-family: coquette, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0px;
+    
+}
+
+nav{
+    background-color: var(--navcolor);
 }
