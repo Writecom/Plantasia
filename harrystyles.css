@@ -317,6 +317,7 @@ p{
     height: 215px;
     margin-right: auto;
     margin-left: auto;
+    border-radius: 0 0 0 0;
 }
 /* Til Købs siden slut */
 
@@ -380,15 +381,15 @@ article{
         padding-bottom: 138px;
     }
     .frame{
-        width: 90vw;
+        width: 68vw;
         margin-left: auto;
         margin-right: auto;
     }
 
     .btn-position{
         position: absolute;
-        left: 62%;
-        top: 90%;
+        left: 50%;
+        top: 87%;
         transform: translate(-50%,-50%);
         bottom: 43px;
         text-align: center;
@@ -404,8 +405,7 @@ article{
         width: 100%;
     }
     #product{
-        width: 60%;
-        height: 570px;
+        width: 50%;
         margin-left: auto;
         margin-right: auto;
         margin-top: 4%;
