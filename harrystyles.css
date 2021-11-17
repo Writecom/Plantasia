@@ -77,6 +77,8 @@ footer p{
 }
 
 /*INDEX*/
+
+/*Sections med billeder der scrolles forbi, med kodehjælp fra Web Zone: https://www.youtube.com/watch?v=mDwKr85NeXw&t=159s*/
 .banner1,
 .parallax-box,
 .parallax-box2{
@@ -84,8 +86,6 @@ footer p{
     background-size: 100%;
     background-repeat: no-repeat;
 }
-
-
 
 .banner1{
     background-image: url(./billeder-til-site/index/Bannerbillede-reverse2.jpg);
@@ -95,12 +95,14 @@ footer p{
 
 }
 
+/*Max width med auto margin ses mange stedere, som hjælper med at centrere indhold, så bruger ikke skal anstrenge øjnene for at se det hele.*/
 .banner1 h1{
     max-width: 354px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 103px;
     padding-bottom: 20px;
+    margin-top: 0px;
 }
 
 .inner-content-box{
@@ -109,11 +111,11 @@ footer p{
 }
 
 .parallax-box{
-    background-image: url(./billeder-til-site/index/eksempel2.jpg);
+    background-image: url(./billeder-til-site/index/vægplanter.jpg);
 }
 
 .parallax-box2{
-    background-image: url(./billeder-til-site/index/planteleksikonbillede.jpg);
+    background-image: url(./billeder-til-site/index/planteleksikonbilledestor.jpg);
 }
 
 .examples-box{
@@ -121,6 +123,7 @@ footer p{
     flex-direction: row;
 }
 
+/*Baggrundsbokse der gør teksten læsbare i 'parallax' sections.*/
 .parallax-box h2,
 .parallax-box h3,
 .parallax-box p,
@@ -151,9 +154,11 @@ footer p{
     width: 82px;
 }
 
+/*Overflow-x, gør at al indhold forbi x-aksen på skærmens størrelse, ikke vises. Dette fjerne irriterende sidescroll, og hjalp med at tilpasse indholdet så intet gik tabt. Hjulpet herfra: https://www.tomred.net/css-html-js/disable-or-enable-horizontal-or-vertical-scrollbar.html*/
 .txt-box,
 .blank-box,
 .content-box,
+.content-box1,
 .content-box2,
 .examples-box,
 .parallax-box,
@@ -166,8 +171,12 @@ footer p{
 .parallax-box,
 .parallax-box2{
     width: 100%;
+
+/*Ud fra XD filen og brug af grids, vides det hvor mange pixels den må være bred. Her bruges max-width også, så siden er skalerbar.
+Der er lavet flere flexboxes, da de alle havde forskellige funktioner på siden. Dette har dog resulteret i en del divs.*/    
 }
-.content-box{
+.content-box,
+.content-box1{
     margin: auto;
     max-width: 354px;
     padding-top: 24px;
@@ -175,6 +184,7 @@ footer p{
     display: flex;
     flex-direction: column;
 }
+
 .content-box2{
     margin: auto;
     max-width: 354px;
@@ -185,11 +195,27 @@ footer p{
     gap: 10px;
 }
 
+/*Til indhold der skal placeres over hinanden, specielt tekst*/
 .txt-box,
 .parallax-box2{
     display: flex;
     flex-direction: column;
 }
+
+.blank-box,
+.parallax-box{
+    width: 100%;
+}
+
+p{
+    font-family: txt;
+    font-size: 15pt;
+}
+
+
+/*Køb*/
+
+
 .nav-buy img{
     width: 55px;
     height: 55px;
@@ -227,35 +253,11 @@ footer p{
     margin-top:-2em;
 }
 
-
-.blank-box,
-.parallax-box{
-    width: 100%;
-}
-.content-box{
-    margin: auto;
-    max-width: 354px;
-    padding-top: 24px;
-    padding-bottom: 40px;
-    display: flex;
-}
-
-.txt-box{
-    flex-direction: column;
-}
-
-p{
-    font-family: txt;
-    font-size: 15pt;
-}
-
 .buy h2{
     font-size: 34pt;
     font-family: txt;
     margin-bottom: 0;
 }
-
-/*Køb*/
 
 .handlere {
     display: flex;
@@ -282,14 +284,16 @@ p{
 .container{
     border-radius: 11px;
 }
-.btn{
+.btn, .btn2{
     text-decoration: none;
     color: black;
     width: 100%;
     background: #D99559;
-    border: 1px solid gray;
-    border-radius: 6px;
-    font-family: txt;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-family: source-serif-4, serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 24pt;
     text-align: center;
 }
@@ -421,7 +425,8 @@ article{
         padding-bottom: 20px;
     }
 
-    .content-box{
+    .content-box,
+    .content-box1{
         margin: auto;
         max-width: 812px;
         padding-top: 24px;
@@ -436,7 +441,7 @@ article{
         padding-bottom: 40px;
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        justify-content: space-between;
     }
     .examples-box{
         display: flex;
@@ -459,6 +464,56 @@ article{
         justify-content: space-evenly;
     }
 
+    .blank-box .txt-box p{
+        max-width: 300px;
+    }
+
+    .blank-box img{
+        width: 250px;
+    }
+
+    .parallax-box img{
+        width: 300px;
+    }
+
+    .inner-content-box p{
+        max-width: 800px;
+    } 
+
+    .inner-content-box h2{
+        max-width: 400px;
+        text-align: left;
+    }
+
+    .btn2{
+        height: 200px;
+        width: 400px;
+    }
+    
+    .content-box1{
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .blank-box .content-box h2,
+    .blank-box .content-box p{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .parallax-box2 img{
+        width: 250px;
+    }
+
+    .parallax-box{
+        background-image: url(./billeder-til-site/index/eksempel2.jpg);
+    }
+
+    .parallax-box2{
+        background-image: url(./billeder-til-site/index/planteleksikonbillede.jpg);
+    }
 
     /* Blogs siden start */
     #blogMain{
