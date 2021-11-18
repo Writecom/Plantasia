@@ -12,7 +12,27 @@
 
 <body>
     <header>
+        <!-- denne burgermenu nav bar er lavet ved hjælp af kode fra https://www.w3schools.com/howto/howto_js_mobile_navbar.aspi -->
+        <img class="nav-buy" src="imgs/logofullp.png" alt="logo">
 
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="burger-btn" href="javascript:void(0);" onclick="myFunction()">
+            <div id="cpu" class="icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </a>
+        <nav class="topnav nav-buy">
+            <!-- Navigation links (hidden by default) -->
+            <div class="burger-nav" id="myLinks">
+                <a href="index.html">Forside</a>
+                <a href="køb.html">Køb</a>
+                <a href="tutorial.html">Tutorial</a>
+                <a href="blogs.html">Blog</a>
+                <a href="FAQ.html">FAQ</a>
+            </div>
+        </nav>
     </header>
     <main>
         <!-- Preview  -->
