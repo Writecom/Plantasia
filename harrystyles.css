@@ -309,10 +309,11 @@ p{
 }
 .btn-køb{
     width: 100%;
-    padding-left: 28%;
-    padding-right: 28%;
+    padding-left: 20%;
+    padding-right: 20%;
     margin-left: auto;
     margin-right: auto;
+    box-sizing: border-box;
 }
 
 .frame img{
@@ -497,6 +498,7 @@ nav{
         height: 54px;
         padding-left: 3%;
         padding-right: 3%;
+        font-size: 28px;
     }
     .frame img{
         width: 100%;
@@ -507,6 +509,7 @@ nav{
         margin-right: auto;
         margin-top: 4%;
         border-radius: 0;
+        border: none;
     }
 
     /*INDEX*/
