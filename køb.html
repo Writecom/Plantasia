@@ -10,23 +10,35 @@
 </head>
 <body>
     <!-- Nav bar med Header til logo -->
-    <nav class="nav-buy">
-        <img src="imgs/logofullp.png" alt="logo">
-        <ul>
-            <li>
+    <header>
+        <!-- denne burgermenu nav bar er lavet ved hjælp af kode fra https://www.w3schools.com/howto/howto_js_mobile_navbar.aspi -->
+        <img class="nav-buy" src="imgs/logofullp.png" alt="logo">
+        
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="burger-btn" href="javascript:void(0);" onclick="myFunction()">
+            <div id="cpu" class="icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </a>
+        <nav class="topnav nav-buy">
+            <!-- Navigation links (hidden by default) -->
+            <div class="burger-nav" id="myLinks">
                 <a href="index.html">Forside</a>
                 <a href="køb.html">Køb</a>
-                <a href="tutorial.html">Prøv Selv</a>
+                <a href="tutorial.html">Toturial</a>
                 <a href="blogs.html">Blog</a>
                 <a href="FAQ.html">FAQ</a>
-            </li>
-        </ul>
-    </nav>
-<!-- Top Banner på siden -->
-    <header class="banner parallax-effect">
-        <h1>Køb/Levandører</h1>
-        <img src="imgs/pcBanner.jpg" alt="Logo">
+            </div>
+        </nav>
     </header>
+    <section>
+        <div class="banner parallax-effect">
+            <h1>FAQ</h1>
+            <img src="imgs/pcBanner.jpg" alt="Logo">
+        </div>
+    </section>
 
     <main class="buy">
         <section class="frame">
@@ -74,5 +86,6 @@
         </p>
     </Article>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
