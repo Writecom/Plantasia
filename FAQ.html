@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,36 +11,43 @@
     <link rel="stylesheet" href="https://use.typekit.net/gtm3mrd.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <header>
         <!-- denne burgermenu nav bar er lavet ved hjælp af kode fra https://www.w3schools.com/howto/howto_js_mobile_navbar.aspi -->
+        <img class="nav-buy" src="imgs/logofullp.png" alt="logo">
+        
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+        <a class="burger-btn" href="javascript:void(0);" onclick="myFunction()">
+            <div id="cpu" class="icon">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </a>
         <nav class="topnav nav-buy">
-            <img src="imgs/logofullp.png" alt="logo">
-            
             <!-- Navigation links (hidden by default) -->
-            <div id="myLinks">
+            <div class="burger-nav" id="myLinks">
                 <a href="index.html">Forside</a>
                 <a href="køb.html">Køb</a>
                 <a href="tutorial.html">Toturial</a>
                 <a href="blogs.html">Blog</a>
                 <a href="FAQ.html">FAQ</a>
             </div>
-            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i><script src="script.js"></script>
-            </a>
         </nav>
+    </header>
+    <section>
         <div class="banner parallax-effect">
             <h1>FAQ</h1>
-        <img src="imgs/pcBanner.jpg" alt="Logo">
+            <img src="imgs/pcBanner.jpg" alt="Logo">
         </div>
-    </header>
+    </section>
     <section class="faq">
         <h2>
             Kan jeg betale med mobilpay?
         </h2>
         <p>
-            Du kan betale med både mobilpay eller med dit betalingskort   
+            Du kan betale med både mobilpay eller med dit betalingskort
         </p>
         <h2>
             Virker fugtighedsmålerne til alle planter?
@@ -48,39 +56,42 @@
             Ja vores fugtighedsmåler virker til alle planter der står i jord hvor måleren kan mål fugt niveauet.
         </p>
         <h2>
-            Kan jeg bruge fugtighedsmåleren uden appen? 
+            Kan jeg bruge fugtighedsmåleren uden appen?
         </h2>
         <p>
-            Fugtighedsmåleren virker uden appen, men du vil ikke få nogle målinger uden appen da fugtighedsmålerens data bliver sendt til appen.
+            Fugtighedsmåleren virker uden appen, men du vil ikke få nogle målinger uden appen da fugtighedsmålerens data
+            bliver sendt til appen.
         </p>
         <h2>
             Kan jeg returnere fugtighedsmåleren, hvis jeg har fortrudt?
         </h2>
         <p>
-            Ja du sagtens returnere fugtighedes måleren, du skal bare følge linket til vores retur side. Produktet kan dog ikke returneres hvis det har været brugt eller indpakning har været brudt. 
+            Ja du sagtens returnere fugtighedes måleren, du skal bare følge linket til vores retur side. Produktet kan
+            dog ikke returneres hvis det har været brugt eller indpakning har været brudt.
         </p>
         <h2>
             Hvad er jeres leverings tid?
         </h2>
         <p>
-            Vi bruger GLS som vores leverandør og den gennemsnitlige leverings tid er normalt 4-5 dage. Dog kan vi ikke garantere at GLS levere inden for den forventet tid da der kan komme uforudset problemer.
+            Vi bruger GLS som vores leverandør og den gennemsnitlige leverings tid er normalt 4-5 dage. Dog kan vi ikke
+            garantere at GLS levere inden for den forventet tid da der kan komme uforudset problemer.
         </p>
     </section>
-    <section class="kontakt">
+    <section class="kontakt faq">
         <h2>
             Fik du ikke svar på dit spørgsmål?
         </h2>
-        <button class="btn">
+        <button class="btn btnfaq">
             Ja
         </button>
-        <button class="btn">
+        <button class="btn btnfaq">
             Nej
         </button>
         <p>
-            Fik du ikke svar på dit spørgsmål kan du skrive til vores kundeservice på:            
+            Fik du ikke svar på dit spørgsmål kan du skrive til vores kundeservice på:
         </p>
         <p>
-            kundeservice@plantasia.dk 
+            kundeservice@plantasia.dk
         </p>
         <div class="info">
             <p>eller ring til os på 12 23 24 25</p>
@@ -90,31 +101,34 @@
             <p>Fredag - Lørdag</p>
             <p>10:00 - 15:00</p>
             <p>Søn- og helligdage</p>
-            <p>Lukket  </p>
-        </div>    
-        </section>
-        <footer class="footer-main">
-            <img src="imgs/logofullp.png" alt="firmalogo">
-            <Article class="footer footer-mobile">
-                <h3>Email</h3>
-                <p>
-                    pl@ntasia.dk
-                </p>
-            </Article>
-            <Article class="footer footer-mobile">
-                <h3>Telefon</h3>
-                <p>
-                    +45 70 12 14 16
-                </p>
-            </Article>
-            <Article class="footer footer-mobile">
-                <h3>Telefontider</h3>
-                <p>
-                    Man-Tor: 9-16<br>
-                    Fre-Lør: 9-15<br>
-                    Søndag: 10-15
-                </p>
-            </Article>
-        </footer>
+            <p>Lukket </p>
+        </div>
+    </section>
+    <footer class="footer-main">
+        <img src="imgs/logofullp.png" alt="firmalogo">
+        <Article class="footer footer-mobile">
+            <h3>Email</h3>
+            <p>
+                pl@ntasia.dk
+            </p>
+        </Article>
+        <Article class="footer footer-mobile">
+            <h3>Telefon</h3>
+            <p>
+                +45 70 12 14 16
+            </p>
+        </Article>
+        <Article class="footer footer-mobile">
+            <h3>Telefontider</h3>
+            <p>
+                Man-Tor: 9-16<br>
+                Fre-Lør: 9-15<br>
+                Søndag: 10-15
+            </p>
+        </Article>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
